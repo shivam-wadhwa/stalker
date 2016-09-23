@@ -11,7 +11,6 @@ res=requests.get(ini+name)
 res.raise_for_status()
 soupobj=bs4.BeautifulSoup(res.text,'html.parser')
 ranks=soupobj.select('hx')
-os.system('cls')
 print "RANKINGS FOR "+ str(name) +'\n'
 if ranks[0].getText()=='NA':
 	print('LONG CHALLENGE:'+ranks[0].getText())
