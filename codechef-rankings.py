@@ -16,7 +16,7 @@ if ranks[0].getText()=='NA':
 	print('LONG CHALLENGE:'+ranks[0].getText())
 else:
 	print 'LONG CHALLENGE:'+ranks[0].getText()+'/'+ranks[1].getText()
-if ranks[2].getText()=='NA':
+if len(ranks)<3 or ranks[2].getText()=='NA':
 	print 'SHORT CHALLENGE:'+"NA"
 else:
 	print 'SHORT CHALLENGE:'+ranks[2].getText()+'/'+ranks[3].getText()
